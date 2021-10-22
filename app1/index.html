@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+ 
     <div id="root"></div>
 
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
@@ -50,19 +50,31 @@
             }
         }
 
+        class CompC extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <h3>O Meu componente C</h3>
+                        <p>Seja bem vindo a nossa empresa</p>
+                    </div>                    
+                )
+            }
+        }
+
         // Class component
         class MeuComponente1 extends React.Component {
             render() {
                 return (
                     <div>
-                        <CompA/>
-                        <hr/>
-                        <CompB/>
+                        <CompA />
+                        <hr />
+                        <CompB />
+                        <hr />
+                        <CompC />
                     </div>
                 )
             }
         }
-
 
         // let nome = "João Ribeiro";
         // JSX - colocar código html dentro do Javascript
